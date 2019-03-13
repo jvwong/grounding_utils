@@ -16,6 +16,7 @@ def makeRequest( filename = 'test.txt' ):
     response = r.json() #dict
     events = response['events']['frames']
     entities = response['entities']['frames']
+    sentences = response['sentences']['frames']
     return {'events': events, 'entities': entities}
   except:
     print('Error')
