@@ -1,8 +1,10 @@
 ENTITY_TYPES = set([
-  "simple-chemical"
+  'simple-chemical',
+  'gene-or-gene-product',
+  'protein'
 ])
 
-def filterEntities( entityFrames ):
+def filterEntityFrames( entityFrames ):
   output = []
   ids = set()
   for frame in entityFrames:

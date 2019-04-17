@@ -1,44 +1,35 @@
 import requests
 import json
 
+def writeToJSONFile( data, outfile ):
+  with open( outfile, 'w' ) as file:
+    file.write( json.dumps( data, indent=True ) )
+
 def pickEntityFields( entityFrame ):
   xref = entityFrame['xrefs'][0]
   entityType = entityFrame['type']
   text = entityFrame['text']
+  sentence_id = entityFrame['sentence']
   return {
     'text': text,
     'xref_id': xref['id'],
     'namespace': xref['namespace'],
-    'type': entityType
+    'type': entityType,
+    'sentence_id': sentence_id
   }
-
-def listToTsv( data, outfile ):
-  with open( outfile, 'w' ) as file:
-    for element in data:
-      for entry in element:
-        file.write(entry + '\t')
-      file.write('\n')
-
-def dictToJSON( data, outfile ):
-  with open( outfile, 'w' ) as file:
-    file.write( json.dumps( data, indent=True ) )
-
-def entityFramesToList( entityFrames ):
-  HEADERS = ['type', 'text', 'xref_namespace', 'xref_id']
-  output = [ HEADERS ]
-  for entityFrame in entityFrames:    
-    fields = pickEntityFields( entityFrame )
-    output.append( [ fields['type'], fields['text'], fields['namespace'], fields['xref_id'] ])
-  return output
 
 def entityFramesToDict( entityFrames ):
   output = []
   for entityFrame in entityFrames:    
-    fields = pickEntityFields( entityFrame )
-    output.append( fields )
+    entityFields = pickEntityFields( entityFrame )    
+    output.append( entityFields )
   return output
 
-
+def addSentences( entityDicts, sentenceFrames ):
+  for entityDict in entityDicts:
+    entityDict['sentence'] = next(sentence['text'] for sentence in sentenceFrames if sentence['frame-id'] == entityDict['sentence_id'])
+    del entityDict['sentence_id']
+    
 # Send to Reach
 def doNLP( filename = 'test.txt' ):
   REACH_URL = 'http://reach.baderlab.org/api/uploadFile'
