@@ -1,10 +1,11 @@
 import os
-from chemicals import getChemicals
-from utils import listToTsv, entityFramesToList, doNLP
+from entity import filterEntities
+from utils import dictToJSON, entityFramesToDict, doNLP
+from pprint import pprint
 
 def main():
   FULL_TEXT_DIR = 'full_text'
-  OUTPUT_FILE_NAME = 'chemicals.txt'
+  OUTPUT_FILE_NAME = 'entities.txt'
   OUTPUT_PATH = os.path.join( FULL_TEXT_DIR, OUTPUT_FILE_NAME )
   entityFrames = []
   for filename in os.listdir( FULL_TEXT_DIR ):
@@ -14,9 +15,9 @@ def main():
         entityFrames = entityFrames + response[ 'entities' ]
       else:
         continue
-  chemicals = getChemicals( entityFrames )
-  asList = entityFramesToList( chemicals )
-  listToTsv( asList, OUTPUT_PATH )
+  entities = filterEntities( entityFrames )
+  data = entityFramesToDict( entities )
+  dictToJSON( data, OUTPUT_PATH )
 
 main()
 

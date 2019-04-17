@@ -1,31 +1,41 @@
 import requests
-
-def listToTsv( list, outfile ):
-  with open( outfile, 'w' ) as file:
-    for element in list:
-      for entry in element:
-        file.write(entry + '\t')
-      file.write('\n')
+import json
 
 def pickEntityFields( entityFrame ):
   xref = entityFrame['xrefs'][0]
-  type = entityFrame['type']
+  entityType = entityFrame['type']
   text = entityFrame['text']
   return {
     'text': text,
     'xref_id': xref['id'],
     'namespace': xref['namespace'],
-    'type': type
+    'type': entityType
   }
+
+def listToTsv( data, outfile ):
+  with open( outfile, 'w' ) as file:
+    for element in data:
+      for entry in element:
+        file.write(entry + '\t')
+      file.write('\n')
+
+def dictToJSON( data, outfile ):
+  with open( outfile, 'w' ) as file:
+    file.write( json.dumps( data, indent=True ) )
 
 def entityFramesToList( entityFrames ):
   HEADERS = ['type', 'text', 'xref_namespace', 'xref_id']
   output = [ HEADERS ]
-  for entityFrame in entityFrames:
-    xref = entityFrame['xrefs'][0]
-    type = entityFrame['type']
-    text = entityFrame['text']
-    output.append([ type, text, xref['namespace'], xref['id'] ])
+  for entityFrame in entityFrames:    
+    fields = pickEntityFields( entityFrame )
+    output.append( [ fields['type'], fields['text'], fields['namespace'], fields['xref_id'] ])
+  return output
+
+def entityFramesToDict( entityFrames ):
+  output = []
+  for entityFrame in entityFrames:    
+    fields = pickEntityFields( entityFrame )
+    output.append( fields )
   return output
 
 
