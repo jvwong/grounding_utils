@@ -50,7 +50,7 @@ def doNLP( filename = 'test.txt' ):
       'entities': entities,
       'sentences': sentences
     }
-  except:
-    print( 'Error' )
+  except Exception as e:
+    print( 'Error: {error}'.format( error=e ) )
   finally:
     print( 'HTTP Code: %s' % (r.status_code,) )
