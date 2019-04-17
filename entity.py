@@ -4,7 +4,10 @@ ENTITY_TYPES = set([
   'protein'
 ])
 
-def filterEntityFrames( entityFrames ):
+def pickUnique( entities ):
+  return list( { ( e['xref_id'] + e['namespace'] ):e for e in entities }.values() )
+
+def filterByType( entityFrames ):
   output = []
   ids = set()
   for frame in entityFrames:

@@ -1,13 +1,13 @@
 import os
-from entity import filterEntityFrames
+from entity import filterByType, pickUnique
 from utils import writeToJSONFile, entityFramesToDict, doNLP, addSentences
 from pprint import pprint
 
 def main():
   FULL_TEXT_DIR = 'full_text'
-  OUTPUT_FILE_NAME = 'entities2.json'
+  OUTPUT_FILE_NAME = 'entities.json'
   OUTPUT_PATH = os.path.join( FULL_TEXT_DIR, OUTPUT_FILE_NAME )
-  outputDict = []
+  results = []
 
   for filename in os.listdir( FULL_TEXT_DIR ):
       if filename.endswith(".txt"):
@@ -16,14 +16,15 @@ def main():
         response = doNLP( path )
         entityFrames = response[ 'entities' ]
         sentenceFrames = response[ 'sentences' ][1:]
-        entities = filterEntityFrames( entityFrames )
+        entities = filterByType( entityFrames )
         entityDicts = entityFramesToDict( entities )
         addSentences( entityDicts, sentenceFrames )
-        outputDict = outputDict + entityDicts
+        results = results + entityDicts
       else:
         continue
 
-  writeToJSONFile( outputDict, OUTPUT_PATH )
+  output = pickUnique( results ) 
+  writeToJSONFile( output, OUTPUT_PATH )
 
 main()
 
