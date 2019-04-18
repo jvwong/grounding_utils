@@ -2,10 +2,11 @@ import os
 from pprint import pprint
 
 from articles.entity import filterByType, pickUnique
-from articles.utils import writeToJSONFile, entityFramesToDict, doNLP, addSentences
-    
+from articles.utils import entityFramesToDict, doNLP, addSentences
+from utils import writeToJSONFile
+
 def scrapeArticleEntities( inDir, outPath ):
-  
+
   results = []
   for filename in os.listdir( inDir ):
       if filename.endswith(".txt"):
@@ -21,5 +22,5 @@ def scrapeArticleEntities( inDir, outPath ):
       else:
         continue
 
-  output = pickUnique( results ) 
+  output = pickUnique( results )
   writeToJSONFile( output, outPath )

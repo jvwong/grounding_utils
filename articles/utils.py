@@ -1,9 +1,4 @@
 import requests
-import json
-
-def writeToJSONFile( data, outfile ):
-  with open( outfile, 'w' ) as file:
-    file.write( json.dumps( data, indent=True ) )
 
 def pickEntityFields( entityFrame ):
   xref = entityFrame['xrefs'][0]
@@ -20,8 +15,8 @@ def pickEntityFields( entityFrame ):
 
 def entityFramesToDict( entityFrames ):
   output = []
-  for entityFrame in entityFrames:    
-    entityFields = pickEntityFields( entityFrame )    
+  for entityFrame in entityFrames:
+    entityFields = pickEntityFields( entityFrame )
     output.append( entityFields )
   return output
 
@@ -29,7 +24,7 @@ def addSentences( entityDicts, sentenceFrames ):
   for entityDict in entityDicts:
     entityDict['sentence'] = next(sentence['text'] for sentence in sentenceFrames if sentence['frame-id'] == entityDict['sentence_id'])
     del entityDict['sentence_id']
-    
+
 # Send to Reach
 def doNLP( filename = 'test.txt' ):
   REACH_URL = 'http://reach.baderlab.org/api/uploadFile'
