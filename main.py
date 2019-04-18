@@ -9,7 +9,7 @@ from popularity.index import getRanks
 
 # --------- Popularity ranking ----------------------
 def main():
-  getRanks()
-  
+  getRanks( False, 20 )
+
 main()
 
