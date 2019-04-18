@@ -66,8 +66,8 @@ def sortPubsPerOrganism( counts, taxons ):
     output[ tax_id ] = sortedByCount
   return output
 
-def getTopGeneIDs( sortedPubsPerOrg, n=10 ):
-  top = sortedPubsPerOrg['9606'][:n]
-  topIds = [ entry['GeneID'] for entry in top ]
-  # topIds = [ { 'GeneID': entry['GeneID'], 'publications': len(entry['PubMed_IDs'])} for entry in top ]
-  return topIds
+def getTopGeneIDs( sortedPubsPerOrg, taxon_ids, num ):
+  out = {}
+  for taxon_id in taxon_ids:
+    out[taxon_id] = [ {entry['GeneID']} for entry in sortedPubsPerOrg[taxon_id][:num] ]
+  return out

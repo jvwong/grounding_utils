@@ -1,4 +1,4 @@
-from popularity.index import getRanks
+from popularity.index import getRanks, getTopGenes
 
 # --------- Article processing ----------------------
 # from articles.index import scrapeArticleEntities
@@ -9,7 +9,8 @@ from popularity.index import getRanks
 
 # --------- Popularity ranking ----------------------
 def main():
-  getRanks( False, 20 )
+  taxon_ids=['9606']
+  getTopGenes( 10 )
 
 main()
 
