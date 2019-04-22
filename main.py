@@ -9,8 +9,8 @@ from popularity.index import getRanks, getTopGenes
 
 # --------- Popularity ranking ----------------------
 def main():
-  taxon_ids=['9606']
-  getTopGenes( 10 )
+  getRanks()
+  getTopGenes()
 
 main()
 

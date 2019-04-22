@@ -42,6 +42,8 @@ def updateCounts( counts, entry ):
 def pubsByOrganism( dataStream, taxons, headers ):
   counts = {}
   reader = csv.DictReader( dataStream, delimiter='\t', fieldnames=headers ) # OrderedDict
+  if headers:
+      next(reader, None)
   for entry in reader:
     if entry['tax_id'] in taxons:
       updateCounts( counts, entry )
@@ -49,11 +51,11 @@ def pubsByOrganism( dataStream, taxons, headers ):
 
 def getDataStream( path ):
   with open( path, 'r' ) as localfile:
-    return io.StringIO( localfile.read() ) #in-memory
+    return io.BytesIO( localfile.read() ) #in-memory
 
 def getPubsPerOrganism( path, taxons ):
   headers = ('tax_id', 'GeneID', 'PubMed_ID')
-  dataStream = getDataStream( path, )
+  dataStream = getDataStream( path )
   counts = pubsByOrganism( dataStream, taxons, headers )
   return counts
 
@@ -69,5 +71,5 @@ def sortPubsPerOrganism( counts, taxons ):
 def getTopGeneIDs( sortedPubsPerOrg, taxon_ids, num ):
   out = {}
   for taxon_id in taxon_ids:
-    out[taxon_id] = [ {entry['GeneID']} for entry in sortedPubsPerOrg[taxon_id][:num] ]
+    out[int(taxon_id)] = [ int(entry['GeneID']) for entry in sortedPubsPerOrg[taxon_id][:num] ]
   return out
