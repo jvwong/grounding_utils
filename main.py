@@ -9,8 +9,8 @@ from popularity.index import getRanks, getTopGenes
 
 # --------- Popularity ranking ----------------------
 def main():
-  getRanks()
-  getTopGenes()
+  # getRanks()
+  getTopGenes( )
 
 main()
 

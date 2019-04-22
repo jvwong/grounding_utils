@@ -21,6 +21,7 @@ TAXONS = set([
 
 TAXON2GENE2PUB_FILE = 'pubsPerOrganism.json'
 SORT_FILE = 'sortedPubsPerOrganism.json'
+TOP_GENE_FILE = 'topGenesPerOrganism.json'
 
 def getRanks():
   # fetchFTPZip( NCBI_GENE_DIRECTORY, GENE2PUBMED_FILE, COUNTS_FILE )
@@ -32,7 +33,8 @@ def getTopGenes( num=10 ):
   with open( SORT_FILE, 'r' ) as json_file:
     sortedPubsPerOrg = json.loads( json_file.read() )
     top = getTopGeneIDs( sortedPubsPerOrg, TAXONS, num )
-    pprint.pprint( top )
+    writeToJSONFile( top, TOP_GENE_FILE)
+    return top
 
 
 
