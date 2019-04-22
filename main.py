@@ -1,29 +1,16 @@
-import os
-from entity import filterEntityFrames
-from utils import writeToJSONFile, entityFramesToDict, doNLP, addSentences
-from pprint import pprint
+from popularity.index import getRanks, getTopGenes
 
+# --------- Article processing ----------------------
+# from articles.index import scrapeArticleEntities
+# FULL_TEXT_DIR = 'full_text'
+# OUTPUT_FILE_NAME = 'entities.json'
+# OUTPUT_PATH = os.path.join( FULL_TEXT_DIR, OUTPUT_FILE_NAME )
+
+
+# --------- Popularity ranking ----------------------
 def main():
-  FULL_TEXT_DIR = 'full_text'
-  OUTPUT_FILE_NAME = 'entities2.json'
-  OUTPUT_PATH = os.path.join( FULL_TEXT_DIR, OUTPUT_FILE_NAME )
-  outputDict = []
-
-  for filename in os.listdir( FULL_TEXT_DIR ):
-      if filename.endswith(".txt"):
-        path = os.path.join( FULL_TEXT_DIR, filename )
-        print( 'Processing {fname}...'.format( fname=filename ))
-        response = doNLP( path )
-        entityFrames = response[ 'entities' ]
-        sentenceFrames = response[ 'sentences' ][1:]
-        entities = filterEntityFrames( entityFrames )
-        entityDicts = entityFramesToDict( entities )
-        addSentences( entityDicts, sentenceFrames )
-        outputDict = outputDict + entityDicts
-      else:
-        continue
-
-  writeToJSONFile( outputDict, OUTPUT_PATH )
+  taxon_ids=['9606']
+  getTopGenes( 10 )
 
 main()
 
