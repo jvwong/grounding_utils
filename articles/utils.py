@@ -2,14 +2,12 @@ import requests
 
 def pickEntityFields( entityFrame ):
   xref = entityFrame['xrefs'][0]
-  entityType = entityFrame['type']
   text = entityFrame['text']
   sentence_id = entityFrame['sentence']
   return {
     'text': text,
     'xref_id': xref['id'],
     'namespace': xref['namespace'],
-    'type': entityType,
     'sentence_id': sentence_id
   }
 

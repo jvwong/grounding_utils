@@ -1,3 +1,5 @@
+from collections import OrderedDict
+
 ENTITY_TYPES = set([
   'simple-chemical',
   'gene-or-gene-product',
@@ -5,7 +7,7 @@ ENTITY_TYPES = set([
 ])
 
 def pickUnique( entities ):
-  return list( { ( e['xref_id'] + e['namespace'] ):e for e in entities }.values() )
+  return list( OrderedDict( [ (e['xref_id'] + e['namespace'], e) for e in entities ] ).values() )
 
 def filterByType( entityFrames ):
   output = []
