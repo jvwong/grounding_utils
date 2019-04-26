@@ -1,9 +1,7 @@
-import os
-from popularity.index import getRanks, getTopGenes
-from articles.index import scrapeArticleEntities
+from blacklist.index import makeBlacklist
 
 def main():
-  scrapeArticleEntities()
-  
+  makeBlacklist()
+
 main()
 
