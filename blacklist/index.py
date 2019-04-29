@@ -99,15 +99,49 @@ def getXrefInfo( uris ):
     fillInValues( result, nameEntries, 'names' )
   return result
 
-def filterXrefInfo( xrefInfo ):
-  filtered = []
+def pickUnique( xrefInfo, uniqueByKey = 'id' ):
+  output = []
+  uniqueValues = set()
   for entry in xrefInfo:
-    
+    testValue = entry.get( uniqueByKey )[0]
+    if testValue not in uniqueValues:
+      uniqueValues.add( testValue )
+      output.append( entry )
+  return output
+
+def pickComplete( xrefInfo, keys = ['db', 'id', 'uri'] ):
+  output = []
+  for entry in xrefInfo:
+    rejected = False
+    for key in keys:
+      if key not in entry:
+        rejected = True
+        break
+    if not rejected:
+      output.append( entry ) 
+  return output
+  
+def filterXrefInfo( xrefInfo ):
+  complete = pickComplete( xrefInfo )
+  unique = pickUnique(complete )
+  return unique
+
+def mapKeys( xrefInfo ):
+  output = []
+  for entry in xrefInfo:
+    output.append({
+      'namespace': entry['db'][0],
+      'xref_id': entry['id'][0],
+      'text': entry['names'],
+    }) 
+  return output
 
 def makeBlacklist():
   stream = fetchBlacklist()
-  uris = getURIs( stream, ('uri', 'h2', 'h3') )[:100]
-  print( 'number of items: {num}'.format(num=len(uris)) )
-  rawXrefInfo = getXrefInfo( uris )
-  xrefInfo = filterXrefInfo( rawXrefInfo )
-  writeToJSONFile( xrefInfo, 'blacklist.json' )
+  uris = getURIs( stream, ('uri', 'h2', 'h3') )
+  xrefInfo = getXrefInfo( uris )
+  print( 'number of xrefs: {n}'.format(n=len(xrefInfo)) )
+  filtered = filterXrefInfo( xrefInfo )
+  formatted = mapKeys( filtered )
+  print( 'number after filtering: {n}'.format(n=len(formatted)))
+  writeToJSONFile( formatted, 'blacklist.json' )

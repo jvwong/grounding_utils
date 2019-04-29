@@ -1,0 +1,654 @@
+[
+ {
+  "namespace": "chebi",
+  "xref_id": "CHEBI:15378",
+  "text": [
+   "H+",
+   "hydrogen(1+)",
+   "Hydron",
+   "hydron",
+   "H(+)"
+  ]
+ },
+ {
+  "namespace": "chebi",
+  "xref_id": "CHEBI:15377",
+  "text": [
+   "HOH",
+   "Water",
+   "H2O",
+   "water",
+   "aqua",
+   "dihydridooxygen",
+   "CHEBI:15377",
+   "hydrogen hydroxide",
+   "Wasser",
+   "BOUND WATER",
+   "dihydrogen oxide",
+   "eau",
+   "[OH2]",
+   "oxidane",
+   "acqua",
+   "WATER",
+   "agua"
+  ]
+ },
+ {
+  "namespace": "chebi",
+  "xref_id": "CHEBI:16908",
+  "text": [
+   "1,4-DIHYDRONICOTINAMIDE ADENINE DINUCLEOTIDE",
+   "Reduced nicotinamide adenine dinucleotide",
+   "NADH",
+   "CHEBI:16908",
+   "nicotinamide adenine dinucleotide (reduced)",
+   "DPNH",
+   "adenosine 5'-{3-[1-(3-carbamoyl-1,4-dihydropyridin-1-yl)-1,4-anhydro-D-ribitol-5-yl] dihydrogen diphosphate}"
+  ]
+ },
+ {
+  "namespace": "chebi",
+  "xref_id": "CHEBI:15422",
+  "text": [
+   "CHEBI:15422",
+   "ADENOSINE-5'-TRIPHOSPHATE",
+   "Adenosine 5'-triphosphate",
+   "adenosine 5'-(tetrahydrogen triphosphate)",
+   "ATP",
+   "H4atp",
+   "Adenosine triphosphate"
+  ]
+ },
+ {
+  "namespace": "chebi",
+  "xref_id": "CHEBI:16526",
+  "text": [
+   "E-290",
+   "carbon dioxide",
+   "R-744",
+   "E290",
+   "Carbon dioxide",
+   "CO2",
+   "methanedione",
+   "dioxidocarbon",
+   "CHEBI:16526",
+   "carbonic anhydride",
+   "[CO2]",
+   "E 290",
+   "CARBON DIOXIDE"
+  ]
+ },
+ {
+  "namespace": "chebi",
+  "xref_id": "CHEBI:37565",
+  "text": [
+   "GTP(4-)",
+   "gtp",
+   "GTP",
+   "guanosine 5'-triphosphate(4-)"
+  ]
+ },
+ {
+  "namespace": "chebi",
+  "xref_id": "CHEBI:17552",
+  "text": [
+   "GDP",
+   "Guanosine 5'-diphosphate",
+   "Guanosine diphosphate",
+   "guanosine 5'-(trihydrogen diphosphate)"
+  ]
+ },
+ {
+  "namespace": "chebi",
+  "xref_id": "CHEBI:15996",
+  "text": [
+   "Guanosine 5'-triphosphate",
+   "GTP",
+   "5'-GTP",
+   "H4gtp",
+   "guanosine triphosphate",
+   "guanosine 5'-triphosphoric acid",
+   "guanosine 5'-(tetrahydrogen triphosphate)",
+   "GUANOSINE-5'-TRIPHOSPHATE"
+  ]
+ },
+ {
+  "namespace": "chebi",
+  "xref_id": "CHEBI:15379",
+  "text": [
+   "Oxygen",
+   "O2",
+   "CHEBI:15379",
+   "Disauerstoff",
+   "dioxygen",
+   "E-948",
+   "E948",
+   "[OO]",
+   "dioxygene",
+   "E 948",
+   "OXYGEN MOLECULE",
+   "molecular oxygen"
+  ]
+ },
+ {
+  "namespace": "chebi",
+  "xref_id": "CHEBI:16761",
+  "text": [
+   "adenosine 5'-(trihydrogen diphosphate)",
+   "Adenosine 5'-diphosphate",
+   "ADENOSINE-5'-DIPHOSPHATE",
+   "5'-adenylphosphoric acid",
+   "ADP",
+   "H3adp"
+  ]
+ },
+ {
+  "namespace": "chebi",
+  "xref_id": "CHEBI:18009",
+  "text": [
+   "TPN",
+   "NADP(+)",
+   "NADP+",
+   "Nicotinamide adenine dinucleotide phosphate",
+   "oxidized nicotinamide-adenine dinucleotide phosphate",
+   "2'-O-phosphonoadenosine 5'-{3-[1-(3-carbamoylpyridinio)-1,4-anhydro-D-ribitol-5-yl] dihydrogen diphosphate}",
+   "beta-Nicotinamide adenine dinucleotide phosphate",
+   "NADP",
+   "beta-nicotinamide adenine dinucleotide phosphate",
+   "Triphosphopyridine nucleotide"
+  ]
+ },
+ {
+  "namespace": "chebi",
+  "xref_id": "CHEBI:30616",
+  "text": [
+   "ATP(4-)",
+   "adenosine 5'-triphosphate(4-)",
+   "atp",
+   "ATP"
+  ]
+ },
+ {
+  "namespace": "chebi",
+  "xref_id": "CHEBI:35780",
+  "text": [
+   "phosphate ion",
+   "phosphate",
+   "Pi",
+   "phosphate ions"
+  ]
+ },
+ {
+  "namespace": "chebi",
+  "xref_id": "CHEBI:15846",
+  "text": [
+   "NAD",
+   "DPN",
+   "beta-NAD",
+   "Nadide",
+   "Nicotinamide adenine dinucleotide",
+   "NAD(+)",
+   "adenosine 5'-{3-[1-(3-carbamoylpyridinio)-1,4-anhydro-D-ribitol-5-yl] dihydrogen diphosphate}",
+   "Diphosphopyridine nucleotide",
+   "NAD+"
+  ]
+ },
+ {
+  "namespace": "chebi",
+  "xref_id": "CHEBI:18367",
+  "text": [
+   "[PO4](3-)",
+   "tetraoxophosphate(V)",
+   "tetraoxophosphate(3-)",
+   "phosphate(3-)",
+   "Orthophosphate",
+   "Phosphate",
+   "phosphate",
+   "PHOSPHATE ION",
+   "PO4(3-)",
+   "tetraoxidophosphate(3-)"
+  ]
+ },
+ {
+  "namespace": "chebi",
+  "xref_id": "CHEBI:29888",
+  "text": [
+   "[(HO)2P(O)OP(O)(OH)2]",
+   "Diphosphorsaeure",
+   "Pyrophosphoric acid",
+   "PYROPHOSPHATE",
+   "Pyrophosphate",
+   "Pyrophosphorsaeure",
+   "mu-oxido-bis(dihydroxidooxidophosphorus)",
+   "H4P2O7",
+   "acide diphosphorique",
+   "Diphosphoric acid",
+   "1,5-dihydrido-2,4-dihydroxido-2,4-dioxido-1,3,5-trioxy-2,4-diphosphy-[5]catena",
+   "diphosphoric acid"
+  ]
+ },
+ {
+  "namespace": "chebi",
+  "xref_id": "CHEBI:58349",
+  "text": [
+   "NADP(3-)",
+   "NADP(+)",
+   "2'-O-phosphonatoadenosine 5'-{3-[1-(3-carbamoylpyridinio)-1,4-anhydro-D-ribitol-5-yl] diphosphate}",
+   "NADP trianion"
+  ]
+ },
+ {
+  "namespace": "kegg compound",
+  "xref_id": "C00080",
+  "text": [
+   "H+",
+   "C00080",
+   "Hydron"
+  ]
+ },
+ {
+  "namespace": "chebi",
+  "xref_id": "CHEBI:25524",
+  "text": [
+   "NAD(P)"
+  ]
+ },
+ {
+  "namespace": "chebi",
+  "xref_id": "CHEBI:68836",
+  "text": [
+   "pyrophosphate group",
+   "diphosphate group",
+   "diphosphooxy group",
+   "[hydroxy(phosphonooxy)phosphoryl]oxy"
+  ]
+ },
+ {
+  "namespace": "chebi",
+  "xref_id": "CHEBI:24636",
+  "text": [
+   "p",
+   "p(+)",
+   "(1)1H(+)",
+   "(1)H(+)",
+   "protium(1+)",
+   "proton"
+  ]
+ },
+ {
+  "namespace": "kyoto encyclopedia of genes and genomes",
+  "xref_id": "7058055",
+  "text": [
+   "adenosine-5-diphosphate",
+   "adenosine-diphosphate",
+   "adenosine-5'-diphosphate",
+   "ADP",
+   "adenosine 5'-pyrophosphate",
+   "adenosine pyrophosphate"
+  ]
+ },
+ {
+  "namespace": "chebi",
+  "xref_id": "CHEBI:57540",
+  "text": [
+   "NAD(1-)",
+   "NAD(+)",
+   "adenosine 5'-{3-[1-(3-carbamoylpyridinio)-1,4-anhydro-D-ribitol-5-yl] diphosphate}",
+   "NAD anion"
+  ]
+ },
+ {
+  "namespace": "kyoto encyclopedia of genes and genomes",
+  "xref_id": "CHEBI:57945",
+  "text": [
+   "nicotinamide adenine dinucleotide reduced",
+   "NADH2",
+   "NADH",
+   "dihydronicotinamide adenine dinucleotide",
+   "DPNH",
+   "NADH+H+",
+   "diphosphopyridine nucleotide reduced",
+   "dihydrodiphosphopyridine nucleotide",
+   "NAD-reduced"
+  ]
+ },
+ {
+  "namespace": "chebi",
+  "xref_id": "CHEBI:13392",
+  "text": [
+   "NAD(P)H"
+  ]
+ },
+ {
+  "namespace": "chebi",
+  "xref_id": "CHEBI:57783",
+  "text": [
+   "NADPH",
+   "2'-O-phosphonatoadenosine 5'-{3-[1-(3-carbamoyl-1,4-dihydropyridin-1-yl)-1,4-anhydro-D-ribitol-5-yl] diphosphate}",
+   "NADPH tetraanion",
+   "NADPH(4-)"
+  ]
+ },
+ {
+  "namespace": "chebi",
+  "xref_id": "CHEBI:16474",
+  "text": [
+   "NADPH",
+   "NADPH DIHYDRO-NICOTINAMIDE-ADENINE-DINUCLEOTIDE PHOSPHATE",
+   "TPNH",
+   "dihydronicotinamide-adenine dinucleotide phosphate",
+   "2'-O-phosphonoadenosine 5'-{3-[1-(3-carbamoyl-1,4-dihydropyridin-1-yl)-1,4-anhydro-D-ribitol-5-yl] dihydrogen diphosphate}",
+   "reduced nicotinamide-adenine dinucleotide phosphate",
+   "Reduced nicotinamide adenine dinucleotide phosphate"
+  ]
+ },
+ {
+  "namespace": "chebi",
+  "xref_id": "CHEBI:43474",
+  "text": [
+   "[PO3(OH)](2-)",
+   "HYDROGENPHOSPHATE ION",
+   "hydrogentetraoxophosphate(2-)",
+   "hydrogen phosphate",
+   "[P(OH)O3](2-)",
+   "hydrogentetraoxophosphate(V)",
+   "HPO4(2-)",
+   "phosphate",
+   "hydroxidotrioxidophosphate(2-)",
+   "hydrogenphosphate",
+   "hydrogen(tetraoxidophosphate)(2-)",
+   "INORGANIC PHOSPHATE GROUP"
+  ]
+ },
+ {
+  "namespace": "mesh 2013",
+  "xref_id": "D009243",
+  "text": [
+   "Nicotinamide-Adenine Dinucleotide",
+   "Coenzyme I",
+   "Dinucleotide, Dihydronicotinamide Adenine",
+   "DPN",
+   "Dihydronicotinamide Adenine Dinucleotide",
+   "Nadide",
+   "Nicotinamide Adenine Dinucleotide",
+   "Nucleotide, Diphosphopyridine",
+   "Dinucleotide, Nicotinamide-Adenine",
+   "NAD",
+   "Adenosine 5'-(trihydrogen diphosphate), P'-5'-ester with 3-(aminocarbonyl)-1-beta-D-ribofuranosylpyridinium, inner salt",
+   "NADH",
+   "Diphosphopyridine Nucleotide",
+   "Adenine Dinucleotide, Dihydronicotinamide"
+  ]
+ },
+ {
+  "namespace": "kyoto encyclopedia of genes and genomes",
+  "xref_id": "C00013",
+  "text": [
+   "PP",
+   "diphosphate",
+   "pyrophosphate",
+   "PPi"
+  ]
+ },
+ {
+  "namespace": "chebi",
+  "xref_id": "CHEBI:13390",
+  "text": [
+   "NAD(P)(+)"
+  ]
+ },
+ {
+  "namespace": "cas",
+  "xref_id": "7732-18-5",
+  "text": [
+   "H2O"
+  ]
+ },
+ {
+  "namespace": "chebi",
+  "xref_id": "CHEBI:58189",
+  "text": [
+   "guanosine 5'-diphosphate(3-)",
+   "guanosine 5'-diphosphate trianion",
+   "5'-O-[(phosphonatooxy)phosphinato]guanosine",
+   "GDP",
+   "GDP(3-)",
+   "GDP trianion",
+   "guanosine 5'-diphosphate"
+  ]
+ },
+ {
+  "namespace": "cas",
+  "xref_id": "53-59-8",
+  "text": [
+   "TPN",
+   "NADP+",
+   "Nicotinamide adenine dinucleotide phosphate",
+   "beta-Nicotinamide adenine dinucleotide phosphate",
+   "NADP",
+   "C00006",
+   "Triphosphopyridine nucleotide"
+  ]
+ },
+ {
+  "namespace": "chebi",
+  "xref_id": "CHEBI:58307",
+  "text": [
+   "1,5-dihydro-FAD dianion",
+   "FADH2(2-)",
+   "1,5-dihydro-FAD(2-)",
+   "(2R,3S,4S)-5-{7,8-dimethyl-2,4-dioxo-1H,2H,3H,4H,5H,10H-benzo[g]pteridin-10-yl}-2,3,4-trihydroxypentyl ({[(2R,3S,4R,5R)-5-(6-amino-9H-purin-9-yl)-3,4-dihydroxyoxolan-2-yl]methyl phosphonato}oxy)phosphonate",
+   "FADH2 dianion",
+   "dihydroflavin adenine dinucleotide dianion",
+   "adenosine 5'-(3-{D-ribo-5-[7,8-dimethyl-2,4-dioxo-1,3,4,5-tetrahydrobenzo[g]pteridin-10(2H)-yl]-2,3,4-trihydroxypentyl} diphosphate)",
+   "FADH2",
+   "dihydroflavin adenine dinucleotide(2-)"
+  ]
+ },
+ {
+  "namespace": "cas",
+  "xref_id": "53-84-9",
+  "text": [
+   "NAD"
+  ]
+ },
+ {
+  "namespace": "kyoto encyclopedia of genes and genomes",
+  "xref_id": "C00001",
+  "text": [
+   "H2O",
+   "H20",
+   "hydrogen oxide",
+   "water"
+  ]
+ },
+ {
+  "namespace": "chebi",
+  "xref_id": "CHEBI:13389",
+  "text": [
+   "NAD",
+   "CHEBI:13389",
+   "nicotinamide-adenine dinucleotide"
+  ]
+ },
+ {
+  "namespace": "chebi",
+  "xref_id": "CHEBI:17877",
+  "text": [
+   "flavin adenine dinucleotide (reduced)",
+   "1,5-dihydro-FAD",
+   "adenosine 5'-(3-{D-ribo-5-[7,8-dimethyl-2,4-dioxo-1,3,4,5-tetrahydrobenzo[g]pteridin-10(2H)-yl]-2,3,4-trihydroxypentyl} dihydrogen diphosphate)",
+   "DIHYDROFLAVINE-ADENINE DINUCLEOTIDE",
+   "FADH2"
+  ]
+ },
+ {
+  "namespace": "chebi",
+  "xref_id": "CHEBI:28931",
+  "text": [
+   "adenosine 3'-monophosphate",
+   "AMP 3'-phosphate",
+   "Adenosine-3'-monophosphate",
+   "3'-Adenosine monophosphate",
+   "3'-AMP",
+   "3'-adenylic acid",
+   "3'-Adenylic acid",
+   "synadenylic acid",
+   "Adenosine 3'-phosphate"
+  ]
+ },
+ {
+  "namespace": "mdl",
+  "xref_id": "MFCD00066473",
+  "text": [
+   "Adenosine diphosphate.",
+   "ADP"
+  ]
+ },
+ {
+  "namespace": "cas",
+  "xref_id": "28366-80-5",
+  "text": [
+   "PI"
+  ]
+ },
+ {
+  "namespace": "kyoto encyclopedia of genes and genomes",
+  "xref_id": "NADPH",
+  "text": [
+   "NADPH",
+   "dihydronicotinamide adenine dinucleotide-P",
+   "NADPH2",
+   "NADPH+H+",
+   "dihydronicotinamide adenine dinucleotide phosphate",
+   "dihydrotriphosphopyridine nucleotide reduced",
+   "TPNH",
+   "dihydronicotinamide adenine dinucleotide phosphate reduced",
+   "NADP-reduced",
+   "NADP-red",
+   "dihydrotriphosphopyridine nucleotide",
+   "Nicotinamide adenine dinucleotide phosphate - reduced",
+   "NADP(H)"
+  ]
+ },
+ {
+  "namespace": "kyoto encyclopedia of genes and genomes",
+  "xref_id": "AMP",
+  "text": [
+   "adenosine-monophosphate",
+   "5'-AMP",
+   "AMP",
+   "adenosine 5'-phosphate",
+   "adenosine 5'-monophosphate",
+   "adenylate",
+   "5'-adenosine monophosphate",
+   "5'-adenylic acid",
+   "adenosine-5'-phosphate",
+   "adenylic acid",
+   "adenosine-phosphate"
+  ]
+ },
+ {
+  "namespace": "mesh 2013",
+  "xref_id": "D014867",
+  "text": [
+   "Water",
+   "Hydrogen Oxide"
+  ]
+ },
+ {
+  "namespace": "chebi",
+  "xref_id": "CHEBI:456216",
+  "text": [
+   "adenosine 5'-diphosphate",
+   "ADP trianion",
+   "ADP(3-)",
+   "ADP",
+   "5'-O-[(phosphonatooxy)phosphinato]adenosine"
+  ]
+ },
+ {
+  "namespace": "mesh 2013",
+  "xref_id": "D009249",
+  "text": [
+   "NADPH",
+   "Coenzyme II",
+   "Nicotinamide Adenine Dinucleotide Phosphate",
+   "Triphosphopyridine Nucleotide",
+   "Dinucleotide Phosphate, Nicotinamide-Adenine",
+   "Adenosine 5'-(trihydrogen diphosphate), 2'-(dihydrogen phosphate), P'-5'-ester with 3-(aminocarbonyl)-1-beta-D-ribofuranosylpyridinium, inner salt",
+   "Nucleotide, Triphosphopyridine",
+   "NADP",
+   "Nicotinamide-Adenine Dinucleotide Phosphate",
+   "Phosphate, Nicotinamide-Adenine Dinucleotide"
+  ]
+ },
+ {
+  "namespace": "chebi",
+  "xref_id": "CHEBI:26078",
+  "text": [
+   "CHEBI:26078",
+   "Phosphoric acid",
+   "acide phosphorique",
+   "H3PO4",
+   "acidum phosphoricum",
+   "Phosphorsaeure",
+   "Orthophosphoric acid",
+   "orthophosphoric acid",
+   "[PO(OH)3]",
+   "Phosphate",
+   "phosphoric acid",
+   "Phosphorsaeureloesungen",
+   "trihydroxidooxidophosphorus",
+   "trihydrogen tetraoxophosphate(3-)",
+   "tetraoxophosphoric acid"
+  ]
+ },
+ {
+  "namespace": "drugbank",
+  "xref_id": "DB09394",
+  "text": [
+   "Phosphoric acid"
+  ]
+ },
+ {
+  "namespace": "drugbank",
+  "xref_id": "DB00171",
+  "text": [
+   "Adenosine-5'-triphosphate",
+   "Striadyne",
+   "Atriphos",
+   "Adenosine 5'-triphosphate",
+   "ATP",
+   "Adenosine triphosphate"
+  ]
+ },
+ {
+  "namespace": "merck index",
+  "xref_id": "154 (12)",
+  "text": [
+   "Adenosine triphosphate.",
+   "ATP"
+  ]
+ },
+ {
+  "namespace": "kyoto encyclopedia of genes and genomes",
+  "xref_id": "7058167",
+  "text": [
+   "guanosine-triphosphate",
+   "GTP",
+   "guanosine 5'-triphosphate",
+   "guanylyl imidodiphosphate"
+  ]
+ },
+ {
+  "namespace": "kyoto encyclopedia of genes and genomes",
+  "xref_id": "C00035",
+  "text": [
+   "GDP",
+   "guanosine-5'-diphosphate",
+   "ppG",
+   "guanosine-diphosphate"
+  ]
+ }
+]
