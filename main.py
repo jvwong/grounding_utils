@@ -1,7 +1,8 @@
-from blacklist.index import makeBlacklist
+from popularity.index import getTopGenes, getRanks
 
 def main():
-  makeBlacklist()
+  getRanks()
+  getTopGenes(25)
 
 main()
 

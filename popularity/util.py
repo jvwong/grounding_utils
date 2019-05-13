@@ -69,7 +69,11 @@ def sortPubsPerOrganism( counts, taxons ):
   return output
 
 def getTopGeneIDs( sortedPubsPerOrg, taxon_ids, num ):
-  out = {}
+  out = []
   for taxon_id in taxon_ids:
-    out[int(taxon_id)] = [ int(entry['GeneID']) for entry in sortedPubsPerOrg[taxon_id][:num] ]
+    out.append({
+      "id": int(taxon_id),
+      "organismOrdering": [int(taxon_id)],
+      "entities": [ { "text": "", "xref_id": int(entry['GeneID']), "namespace": "ncbi", "sentence": "" } for entry in sortedPubsPerOrg[taxon_id][:num] ]
+    })
   return out

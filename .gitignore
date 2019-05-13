@@ -3,3 +3,4 @@ full_text/
 .DS_Store
 *.txt
 *.pyc
+*.json
