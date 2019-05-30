@@ -1,8 +1,7 @@
-from popularity.index import getTopGenes, getRanks
+from articles.index import scrapeArticleEntities
 
 def main():
-  getRanks()
-  getTopGenes(25)
+  scrapeArticleEntities()
 
 main()
 
